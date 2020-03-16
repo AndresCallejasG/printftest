@@ -3,41 +3,41 @@
 #include <stdio.h>
 /**
  * p_char - Prints a character
- * @valist: va_list
+ * @list: va_list
  * Return: none
  **/
-void p_char(va_list valist)
+void p_char(va_list list)
 {
-	printf("%c", va_arg(valist, int));
+	printf("%c", va_arg(list, int));
 }
 /**
  * p_float - Prints a float
- * @valist: va_list
+ * @list: va_list
  * Return: none
  **/
-void p_float(va_list valist)
+void p_float(va_list list)
 {
-	printf("%f", va_arg(valist, double));
+	printf("%f", va_arg(list, double));
 }
 /**
  * p_int - Prints a int
- * @valist: va_list
+ * @list: va_list
  * Return: none
  **/
-void p_int(va_list valist)
+void p_int(va_list list)
 {
-	printf("%d", va_arg(valist, int));
+	printf("%d", va_arg(list, int));
 }
 /**
  * p_str - Prints a str
- * @valist: va_list
+ * @list: va_list
  * Return: none
  **/
-void p_str(va_list valist)
+void p_str(va_list list)
 {
 	char *str;
 
-	str = va_arg(valist, char *);
+	str = va_arg(list, char *);
 
 	if (str == 0)
 		str = "(nil)";
